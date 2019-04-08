@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+  h1 #{title}
+  form(method='POST', action='/register', enctype='multipart/form-data')
+    #form-group
+      lable Username
+      input.form-control(name='userName', type='text')
+    #form-group
+      lable Email
+      input.form-control(name='email', type='email')
+    #form-group
+      lable Password
+      input.form-control(name='password', type='password')
+    #form-group
+      label(for='exampleFormControlFile1') Upload Image
+      input#file.form-control-file(type='file', name='file')
+    input.btn.btn-primary(type='submit', value='Submit')    
+        
+                                
+                    
+            

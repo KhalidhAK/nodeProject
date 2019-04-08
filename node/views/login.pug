@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h2(style="color:green") #{message}
+  h1 Login
+  form(method='POST', action='/login')
+    #form-group
+      lable Username
+      input.form-control(name='username', type='text')
+    #form-group
+      lable Password
+      input.form-control(name='password', type='password')
+    input.btn.btn-primary(type='submit', value='Submit')    
+        
